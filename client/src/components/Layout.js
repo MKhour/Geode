@@ -1,11 +1,16 @@
 import { Link } from "react-router-dom";
 import './App.css';
+import Header from './Header';
 
 const Layout = () => {
   return (
     <>
     <div className="App">
-        <h1>Welcome to Geode</h1>
+      <h1>geode</h1>
+      <div>
+        <Header />
+      </div>
+        {/* <h1>geode</h1>
       <nav>
         <ul>
           <li>
@@ -17,8 +22,8 @@ const Layout = () => {
           {/* <li>
             <Link to="/contact">Contact</Link>
           </li> */}
-        </ul>
-      </nav>
+        {/* </ul>
+      </nav> */}
 
       {/* <h2>Welcome to React Router Tutorial</h2>
           <nav className="navbar navbar-expand-lg navbar-light bg-light">

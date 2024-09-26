@@ -1,19 +1,38 @@
 import { Link } from "react-router-dom";
 import './App.css';
+import styled from 'styled-components';
+
+const Button = styled.button`
+  
+  width: 100px;
+  height: 70px;
+  font-family: 'Comfortaa', cursive;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 20px #A2C3C7;
+  border-radius: 30px;
+`
 
 const Layout = () => {
   return (
     <>
     <div className="App">
-    <h1>Welcome to Geode</h1>
+    {/* <h1>geode</h1> */}
       <nav>
       
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">
+              <Button>
+                Home
+              </Button>
+            </Link>
           </li>
           <li>
-            <Link to="/journal">Journal</Link>
+            <Link to="/journal">
+              <Button>
+                Journal
+              </Button>
+            </Link>
           </li>
           {/* <li>
             <Link to="/contact">Contact</Link>
